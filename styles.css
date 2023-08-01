@@ -2,8 +2,9 @@
   /* variables */
   --bg-color: #282c34;
   --fg-color: #abb2bf;
-  --pr-color: #98c379;
-  --sd-color: #e5c075;
+  --green: #98c379;
+  --yellow: #e5c075;
+  --blue: #61afef;
 
   /* colors */
   background-color: var(--bg-color);
@@ -14,11 +15,11 @@
 }
 
 h2 {
-  color: var(--pr-color);
+  color: var(--blue);
 }
 
 h3 {
-  color: var(--sd-color);
+  color: var(--yellow);
 }
 
 a {
@@ -27,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: var(--pr-color);
+  color: var(--green);
 }
 
 li {
@@ -86,4 +87,44 @@ li {
 .social-header {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  background: var(--bg-color);
+
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.search-bar input {
+  background: var(--bg-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--fg-color);
+
+  text-align: center;
+  font-size: 15px;
+
+  width: 650px;
+  height: 40px;
+  margin: 100px;
+
+  color: var(--fg-color);
+}
+
+.search-bar input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--green);
+
+  outline: none;
 }
